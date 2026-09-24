@@ -9,7 +9,7 @@ import argparse
 import json
 from pathlib import Path
 
-# import cv2
+import cv2
 
 from src import basket_generator, classification, config, detection, preprocessing, report
 from src.visualize import draw_annotations
