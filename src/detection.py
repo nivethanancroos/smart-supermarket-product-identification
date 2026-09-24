@@ -79,7 +79,7 @@ if __name__ == "__main__":
     parser.add_argument("--out", default="outputs/detection_preview.png")
     args = parser.parse_args()
 
-    img = cv2.imread(args.image)
+    # img = cv2.imread(args.image)
     dets = detect_products(img)
     preview = img.copy()
     for det in dets:
