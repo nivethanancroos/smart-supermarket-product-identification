@@ -109,3 +109,5 @@ def main():
         (output_dir / "detections.json").write_text(json.dumps(detections, indent=2))
 
 
+if __name__ == "__main__":
+    main()
