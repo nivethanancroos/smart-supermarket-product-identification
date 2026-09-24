@@ -14,7 +14,7 @@ import torch.nn as nn
 from PIL import Image
 from torchvision import models, transforms
 
-from src import config
+# from src import config
 
 
 class ProductClassifier:
