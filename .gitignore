@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Datasets are large and not meant to live in git history
+archive(2)/
+dataset/
+d2s_yolo/
+yolo_dataset/
+
+# Trained weights and generated outputs are reproducible via train.py /
+# yolo_train.py / main.py — d2s_yolo_best.pt is the one exception, kept
+# so the repo is runnable without retraining first.
+models/*.pth
+models/classes.json
+models/yolo_best.pt
+outputs/*
+!outputs/.gitkeep
+runs/
