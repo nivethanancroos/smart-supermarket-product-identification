@@ -13,7 +13,7 @@ import cv2
 
 from src import basket_generator, classification, config, detection, preprocessing, report
 from src.visualize import draw_annotations
-
+from src.yolo_detector import YoloProductDetector
 
 
 def score_against_ground_truth(detections: list[dict], ground_truth: list[dict]) -> float:
