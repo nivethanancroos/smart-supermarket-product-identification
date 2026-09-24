@@ -86,6 +86,4 @@ if __name__ == "__main__":
         x, y, w, h = det["bbox"]
         cv2.rectangle(preview, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-    Path(args.out).parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(args.out, preview)
-    print(f"Found {len(dets)} candidate regions. Saved preview to {args.out}")
+   
